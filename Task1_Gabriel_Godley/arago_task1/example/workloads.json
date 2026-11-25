@@ -1,0 +1,23 @@
+{
+  "_about": "Inputs for `python TileSizer.py --examples` (or `python -m tilesizer examples`). Every workload discussed in the report. Paths are relative to the package root. A model run gives the hardware (a hw file or [Nd, Nm, S]); an optimizer run gives speed and size goals.",
+  "model_runs": [
+    {"name": "fig2_064_dependency_bound", "trace": "example/traces/mm_64x64x64.csv", "hw": "example/hw_recommended.json"},
+    {"name": "fig4_128_small_latency_floor", "trace": "example/traces/mm_128x128x128.csv", "hw": "example/hw_recommended.json"},
+    {"name": "table1_128_on_min_hardware", "trace": "example/traces/mm_128x128x128.csv", "hw": "example/hw_small_128.json"},
+    {"name": "fig2_192_first_dma_limited", "trace": "example/traces/mm_192x192x192.csv", "hw": "example/hw_recommended.json"},
+    {"name": "exp3_256_square", "trace": "example/traces/mm_256x256x256.csv", "hw": "example/hw_recommended.json"},
+    {"name": "fig4_512_dma_limited", "trace": "example/traces/mm_512x512x512.json", "hw": "example/hw_recommended.json"},
+    {"name": "fig2_1024_last_dma_limited", "trace": "example/traces/mm_1024x1024x1024.csv", "hw": "example/hw_recommended.json"},
+    {"name": "fig4_2048_large_compute_bound", "trace": "example/traces/mm_2048x2048x2048.csv", "hw": "example/hw_recommended.json"},
+    {"name": "fig2_4096_compute_bound", "trace": "example/traces/mm_4096x4096x4096.csv", "hw": "example/hw_recommended.json"},
+    {"name": "exp3_64x4096x64_long_k", "trace": "example/traces/mm_64x4096x64.csv", "hw": "example/hw_recommended.json"},
+    {"name": "edge_64x4096x4096_skewed", "trace": "example/traces/mm_64x4096x4096.csv", "hw": "example/hw_recommended.json"},
+    {"name": "edge_64x8192x64_skewed", "trace": "example/traces/mm_64x8192x64.csv", "hw": "example/hw_recommended.json"},
+    {"name": "edge_100x200x300_padded", "trace": "example/traces/mm_100x200x300.csv", "hw": "example/hw_recommended.json"},
+    {"name": "edge_2048_minimum_memory_S4", "dims": [2048, 2048, 2048], "hardware": [8, 20, 4]}
+  ],
+  "optimizer_runs": [
+    {"name": "table1_small_128", "dims": [128, 128, 128], "speeds": ["fast"], "sizes": ["compact"]},
+    {"name": "table1_large_2048", "dims": [2048, 2048, 2048], "speeds": ["fast"], "sizes": ["compact"]}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "mode": "model",
+  "workload": {
+    "name": "edge_2048_minimum_memory_S4",
+    "M": 2048,
+    "K": 2048,
+    "N": 2048,
+    "tiles_m": 32,
+    "tiles_k": 32,
+    "tiles_n": 32,
+    "category": "large",
+    "shape_from": "dims",
+    "COMPUTE": 32768,
+    "ACC": 31744,
+    "SAVE": 1024,
+    "LOAD_min": 2048
+  },
+  "hardware": {
+    "Nd": 8,
+    "Nm": 20,
+    "S": 4
+  },
+  "ticks": 199680.0,
+  "cycles": 25559040,
+  "matrix_util": 1.62,
+  "dma_util": 16.67,
+  "mem_peak": 82.95,
+  "mem_mean": 82.66,
+  "mem_prefetch_peak": 100.0,
+  "mem_prefetch_mean": 99.75,
+  "limiter": "dma",
+  "tiling": "block1x1",
+  "phases": {
+    "fill_ticks": 8,
+    "drain_ticks": 4,
+    "steady_memory_tiles": 3.32,
+    "resident_tiles": 1
+  }
+}

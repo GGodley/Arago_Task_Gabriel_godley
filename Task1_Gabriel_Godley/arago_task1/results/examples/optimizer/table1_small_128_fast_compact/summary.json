@@ -1,0 +1,50 @@
+{
+  "mode": "optimizer",
+  "workload": {
+    "name": "table1_small_128",
+    "M": 128,
+    "K": 128,
+    "N": 128,
+    "tiles_m": 2,
+    "tiles_k": 2,
+    "tiles_n": 2,
+    "category": "small",
+    "shape_from": "dims",
+    "COMPUTE": 8,
+    "ACC": 4,
+    "SAVE": 4,
+    "LOAD_min": 8
+  },
+  "hardware": {
+    "Nd": 4,
+    "Nm": 2,
+    "S": 16
+  },
+  "ticks": 14,
+  "cycles": 1792,
+  "matrix_util": 42.86,
+  "dma_util": 85.71,
+  "mem_peak": 75.0,
+  "mem_mean": 57.03,
+  "mem_prefetch_peak": 75.0,
+  "mem_prefetch_mean": 57.03,
+  "limiter": "matrix",
+  "tiling": "block2x2",
+  "phases": {
+    "fill_ticks": 4,
+    "drain_ticks": 4,
+    "steady_memory_tiles": 12,
+    "resident_tiles": 4
+  },
+  "goal": {
+    "speed": "fast",
+    "size": "compact",
+    "speed_step_P": 2,
+    "target_ticks": 14,
+    "target_cycles": 1792,
+    "planned_tiling": "block2x2",
+    "memory_needed_tiles": 12,
+    "least_memory_for_speed": 12,
+    "memory_where_more_stops_helping": 12
+  }
+}

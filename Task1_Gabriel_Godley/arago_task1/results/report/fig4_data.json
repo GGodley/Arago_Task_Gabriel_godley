@@ -1,0 +1,50 @@
+{
+ "128": {
+  "ticks": 10,
+  "cycles": 1280,
+  "matrix_util": 6.0,
+  "dma_util": 60.0,
+  "mem_peak": 4.69,
+  "mem_mean": 3.12,
+  "limiter": "path",
+  "tiling": "block2x2",
+  "phases": {
+   "fill_ticks": 4,
+   "drain_ticks": 4,
+   "steady_memory_tiles": 12,
+   "resident_tiles": 4
+  }
+ },
+ "512": {
+  "ticks": 96.0,
+  "cycles": 12288,
+  "matrix_util": 50.0,
+  "dma_util": 100.0,
+  "mem_peak": 33.86,
+  "mem_mean": 31.8,
+  "limiter": "dma",
+  "tiling": "block8x8",
+  "phases": {
+   "fill_ticks": 8,
+   "drain_ticks": 4,
+   "steady_memory_tiles": 86.68,
+   "resident_tiles": 64
+  }
+ },
+ "2048": {
+  "ticks": 3234,
+  "cycles": 413952,
+  "matrix_util": 99.74,
+  "dma_util": 94.99,
+  "mem_peak": 80.9,
+  "mem_mean": 80.4,
+  "limiter": "matrix",
+  "tiling": "block11x16",
+  "phases": {
+   "fill_ticks": 16,
+   "drain_ticks": 4,
+   "steady_memory_tiles": 207.1,
+   "resident_tiles": 176
+  }
+ }
+}

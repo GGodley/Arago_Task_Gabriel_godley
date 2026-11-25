@@ -1,0 +1,17 @@
+mode,run,M,K,N,category,Nd,Nm,S,cycles,matrix_util_pct,dma_util_pct,mem_peak_pct,mem_mean_pct,limiter,tiling
+model,fig2_064_dependency_bound,64,64,64,small,8,20,256,1152,0.56,16.67,1.17,0.82,path,block1x1
+model,fig4_128_small_latency_floor,128,128,128,small,8,20,256,1280,6.0,60.0,4.69,3.12,path,block2x2
+model,table1_128_on_min_hardware,128,128,128,small,4,2,16,1792,42.86,85.71,75.0,57.03,matrix,block2x2
+model,fig2_192_first_dma_limited,192,192,192,small,8,20,256,1728,16.67,100.0,10.55,7.75,dma,block3x3
+model,exp3_256_square,256,256,256,small,8,20,256,3072,23.33,100.0,14.45,12.28,dma,block4x4
+model,fig4_512_dma_limited,512,512,512,medium,8,20,256,12288,50.0,100.0,33.86,31.8,dma,block8x8
+model,fig2_1024_last_dma_limited,1024,1024,1024,medium,8,20,256,65536,77.5,100.0,60.67,59.61,dma,block8x16
+model,fig4_2048_large_compute_bound,2048,2048,2048,large,8,20,256,413952,99.74,94.99,80.9,80.4,matrix,block11x16
+model,fig2_4096_compute_bound,4096,4096,4096,large,8,20,256,3330304,99.97,78.71,100.0,99.51,matrix,block11x22
+model,exp3_64x4096x64_long_k,64,4096,64,large,8,20,256,8256,9.84,100.0,6.53,6.13,dma,block1x1
+model,edge_64x4096x4096_skewed,64,4096,4096,large,8,20,256,270336,19.24,100.0,31.2,30.85,dma,block1x64
+model,edge_64x8192x64_skewed,64,8192,64,large,8,20,256,16448,9.92,100.0,6.17,5.98,dma,block1x1
+model,edge_100x200x300_padded,100,200,300,medium,8,20,256,2432,18.42,100.0,12.64,10.25,dma,block2x5
+model,edge_2048_minimum_memory_S4,2048,2048,2048,large,8,20,4,25559040,1.62,16.67,82.95,82.66,dma,block1x1
+optimizer,table1_small_128 fast compact,128,128,128,small,4,2,16,1792,42.86,85.71,75.0,57.03,matrix,block2x2
+optimizer,table1_large_2048 fast compact,2048,2048,2048,large,8,20,256,413952,99.74,94.99,80.9,80.4,matrix,block11x16

@@ -1,0 +1,39 @@
+{
+  "mode": "model",
+  "workload": {
+    "name": "mm_100x200x300",
+    "M": 100,
+    "K": 200,
+    "N": 300,
+    "tiles_m": 2,
+    "tiles_k": 4,
+    "tiles_n": 5,
+    "category": "medium",
+    "shape_from": "trace header",
+    "COMPUTE": 40,
+    "ACC": 30,
+    "SAVE": 10,
+    "LOAD_min": 28
+  },
+  "hardware": {
+    "Nd": 8,
+    "Nm": 20,
+    "S": 256
+  },
+  "ticks": 19.0,
+  "cycles": 2432,
+  "matrix_util": 18.42,
+  "dma_util": 100.0,
+  "mem_peak": 12.64,
+  "mem_mean": 10.25,
+  "mem_prefetch_peak": 12.64,
+  "mem_prefetch_mean": 10.48,
+  "limiter": "dma",
+  "tiling": "block2x5",
+  "phases": {
+    "fill_ticks": 4,
+    "drain_ticks": 4,
+    "steady_memory_tiles": 32.36,
+    "resident_tiles": 10
+  }
+}
